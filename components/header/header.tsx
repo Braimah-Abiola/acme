@@ -42,15 +42,15 @@ const Header = () => {
     <div
       className={`header ${
         isActive && !isScrolled
-          ? "bg-black border border-b-black/10 transition-all duration-300" // isActive true, isScrolled false
+          ? "bg-black border border-none transition-all duration-300" // isActive true, isScrolled false
           : !isActive && isScrolled
-          ? "bg-white border border-b-black/10 transition-all duration-300" // isActive false, isScrolled true
+          ? "bg-white border border-none transition-all duration-300" // isActive false, isScrolled true
           : isActive && isScrolled
-          ? "bg-black border border-black transition-all duration-300" // isActive true, isScrolled true
-          : "bg-transparent border-transparent transition-all ease-in-out duration-300" // isActive false, isScrolled false
+          ? "bg-black border border-none transition-all duration-300" // isActive true, isScrolled true
+          : "bg-white border-none  transition-all ease-in-out duration-300" // isActive false, isScrolled false
       }`}
     >
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full border-b border-b-black/15">
         <FreeShipping />
 
         <div className="bar mt-2 pb-3">

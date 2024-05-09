@@ -2,7 +2,7 @@ import { CreditCard, Headphones, Truck } from "lucide-react";
 
 const WhyUs = () => {
   return (
-    <div className="w-full px-60 py-20">
+    <div className="w-full px-60 pb-20">
       <div className="flex items-center justify-between">
         <div className="w-full flex flex-col items-center">
           <Truck className="text-[#E37347] h-10 w-10 mb-4" />

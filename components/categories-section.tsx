@@ -5,12 +5,12 @@ const CategoriesSection = () => {
   return (
     <div className="w-full h-fit">
       <div className="flex items-center justify-between h-[40rem] relative">
-        <div className="w-full bg-black h-full">
-          <div className="w-full h-full relative">
+        <div className="w-full bg-black h-full group">
+          <div className="w-full h-full relative overflow-hidden">
             <Image
               fill
               src="/common/nike.webp"
-              className=" object-cover object-right"
+              className=" object-cover object-right group-hover:scale-110 ease-in-out duration-500"
               alt="asdfasdf"
             />
           </div>
@@ -20,15 +20,17 @@ const CategoriesSection = () => {
             <h4 className=" text-3xl text-white uppercase mb-4 font-medium">
               Nike
             </h4>
-            <Button className=" px-12">Shop Now</Button>
+            <Button variant="secondary" className=" px-12">
+              Shop Now
+            </Button>
           </div>
         </div>
-        <div className="w-full bg-black h-full">
-          <div className="w-full h-full relative">
+        <div className="w-full bg-black h-full group">
+          <div className="w-full h-full relative overflow-hidden">
             <Image
               fill
               src="/common/lv.webp"
-              className=" object-cover object-center"
+              className=" object-cover object-right group-hover:scale-110 ease-in-out duration-500"
               alt="asdfasdf"
             />
           </div>
@@ -38,15 +40,17 @@ const CategoriesSection = () => {
             <h4 className=" text-3xl text-white uppercase mb-4 font-medium">
               LV
             </h4>
-            <Button className=" px-12">Shop Now</Button>
+            <Button variant="secondary" className=" px-12">
+              Shop Now
+            </Button>
           </div>
         </div>
-        <div className="w-full bg-black h-full">
-          <div className="w-full h-full relative">
+        <div className="w-full bg-black h-full group">
+          <div className="w-full h-full relative overflow-hidden">
             <Image
               fill
               src="/common/esntls.webp"
-              className=" object-cover object-center"
+              className=" object-cover object-right group-hover:scale-110 ease-in-out duration-500"
               alt="asdfasdf"
             />
           </div>
@@ -56,15 +60,17 @@ const CategoriesSection = () => {
             <h4 className=" text-3xl text-white uppercase mb-4 font-medium">
               ESNTLS
             </h4>
-            <Button className=" px-12">Shop Now</Button>
+            <Button variant="secondary" className=" px-12">
+              Shop Now
+            </Button>
           </div>
         </div>
-        <div className="w-full bg-black h-full">
-          <div className="w-full h-full relative">
+        <div className="w-full bg-black h-full group">
+          <div className="w-full h-full relative overflow-hidden">
             <Image
               fill
               src="/common/ralph.webp"
-              className=" object-cover object-center"
+              className=" object-cover object-right group-hover:scale-110 ease-in-out duration-500"
               alt="asdfasdf"
             />
           </div>
@@ -73,7 +79,9 @@ const CategoriesSection = () => {
             <h4 className=" text-3xl text-white uppercase mb-4 font-medium">
               RALPH LAUREN
             </h4>
-            <Button className=" px-12">Shop Now</Button>
+            <Button variant="secondary" className=" px-12">
+              Shop Now
+            </Button>
           </div>
         </div>
       </div>
