@@ -4,7 +4,7 @@ import Skeleton from "@/components/ui/skeleton";
 const Loading = () => {
   return (
     <Container>
-      <div className=" w-full hidden md:block pt-40 px-8 md:px-60">
+      <div className=" w-full hidden md:block md:pt-40 px-8 md:px-60">
         <div className="w-full flex flex-row gap-10 justify-between">
           <div className="flex flex-row w-full gap-4">
             <div className="w-full">
@@ -26,7 +26,7 @@ const Loading = () => {
         </div>
       </div>
 
-      <div className=" w-full md:hidden pt-24 px-4">
+      <div className=" w-full md:hidden pt-28 px-4">
         <div className="flex flex-col">
           <Skeleton className="w-[100%] h-[4rem]" />
           <Skeleton className="w-[100%] h-[14rem] mt-3" />

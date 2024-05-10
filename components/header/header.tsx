@@ -69,7 +69,7 @@ const Header = () => {
             </Link>
           </div>
 
-          <div>
+          <div className="hidden lg:block">
             <NavLink />
           </div>
 

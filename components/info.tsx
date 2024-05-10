@@ -47,7 +47,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
           <CurrencyOriginal value={data?.price} />
         </p>
       </div>
-      <div className="flex items-center py-4 gap-10 mt-2">
+      <div className="flex flex-col md:flex-row md:items-center py-4 gap-6 md:gap-10 mt-2">
         <div className="flex items-center gap-2">
           <RotateCcw />
           <p className="text-base">14-Day Money Back Guarantee</p>
@@ -83,7 +83,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
       <div className="mt-10 flex items-center gap-x-3">
         <Button
           onClick={onAddToCart}
-          className="flex items-center gap-x-2 px-8 w-fit"
+          className="flex items-center gap-x-2 px-8 w-full md:w-fit"
         >
           <ShoppingCart size={20} />
           Add To Cart

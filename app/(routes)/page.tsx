@@ -29,7 +29,9 @@ const HomePage = async () => {
         </div>
       </Container>
       <FAQ />
+      <div className="h-10" />
       <WhyUs />
+      <div className="md:h-10" />
     </div>
   );
 };

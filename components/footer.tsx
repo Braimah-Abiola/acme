@@ -1,47 +1,22 @@
 "use client";
 
-import { ArrowUp } from "lucide-react";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import Container from "./ui/container";
-import { ScreenFitText } from "./ui/full-width-text";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "./ui/button";
+import Container from "./ui/container";
+import { Input } from "./ui/input";
 
 const Footer = () => {
-  const [localTime, setLocalTime] = useState("");
-
-  useEffect(() => {
-    const getCurrentTime = () => {
-      const options: Intl.DateTimeFormatOptions = {
-        hour: "numeric",
-        minute: "numeric",
-        timeZoneName: "short",
-      };
-      const timeString = new Intl.DateTimeFormat("en-US", options).format(
-        new Date()
-      );
-      setLocalTime(timeString);
-    };
-
-    const intervalId = setInterval(getCurrentTime, 60000);
-
-    getCurrentTime();
-
-    return () => clearInterval(intervalId);
-  }, []);
-
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  // const handleScrollToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
 
   return (
-    <footer className="bg-[#1C1C1C] pt-20 pb-10 border-t mt-20 md:mt-0">
+    <footer className="bg-[#1C1C1C] pt-10 md:pt-20 pb-10 border-t mt-20 md:mt-0">
       <Container>
-        <div className="w-full flex justify-between px-5 gap-20">
+        <div className="w-full flex flex-col md:flex-row md:justify-between px-5 gap-10 md:gap-20">
           <div className="w-full flex flex-col items-start">
-            <Link href="/" className="-mt-2">
+            <Link href="/" className="md:-mt-2">
               <div className="relative w-[120px] h-[50px]">
                 <Image
                   className="hover:scale-110 transition duration-300 ease-in-out"
@@ -51,7 +26,7 @@ const Footer = () => {
                 />
               </div>
             </Link>
-            <p className="text-white/70 text-base w-[70%]">
+            <p className="text-white/70 text-base md:w-[70%]">
               Elevate your look, embrace your style. Unleash the essence of
               fashion with confidence and comfort in every thread.
             </p>
@@ -83,16 +58,16 @@ const Footer = () => {
                 and more.
               </p>
               <Input
-                className="mt-4 w-[80%]"
+                className="mt-4 md:w-[80%]"
                 type="email"
                 placeholder="Email address"
               />
-              <Button className="mt-6 px-8">Subscribe Now</Button>
+              <Button className="mt-6 md:px-8">Subscribe Now</Button>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-between px-5 items-center w-ful mt-20">
+        <div className="flex flex-col md:flex-row md:justify-between px-5 items-center w-full gap-6 md:gap-0 mt-20">
           <div className="flex items-center gap-4">
             <Image width={24} height={24} src="/common/us.png" alt="Currency" />
             <p className="text-white/70 text-base">United States - Dollar</p>

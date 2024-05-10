@@ -4,13 +4,13 @@ import Image from "next/image";
 const Reviews = () => {
   return (
     <div className="flex flex-col items-center py-20">
-      <h2 className=" font-semibold uppercase text-[#1C1C1C] text-3xl">
+      <h2 className=" font-semibold uppercase text-[#1C1C1C] text-center text-2xl md:text-3xl">
         Customer Reviews
       </h2>
 
-      <div className="flex justify-center items-center mt-12 gap-4 w-full">
-        <div className="h-full border border-black/10 rounded-lg p-2">
-          <div className="w-[18rem] h-[20rem] relative rounded-lg">
+      <div className="flex flex-col px-4 md:px-0 md:flex-row md:justify-center items-center mt-12 gap-4 w-full">
+        <div className="h-full w-full md:w-fit border border-black/10 rounded-lg p-2">
+          <div className=" w-full md:w-[18rem] h-[20rem] relative rounded-lg">
             <Image
               fill
               className=" object-cover object-center rounded-lg"
@@ -30,12 +30,12 @@ const Reviews = () => {
             <Star fill="#4E35CE" color="#4E35CE" />
             <StarHalfIcon fill="#4E35CE" color="none" />
           </div>
-          <h4 className="text-black text-lg font-normal w-[18rem]">
+          <h4 className="text-black text-lg font-normal  w-full md:w-[18rem]">
             Best quality out there would recommend to everyone
           </h4>
         </div>
         <div className="h-full border border-black/10 rounded-lg p-2">
-          <div className="w-[18rem] h-[20rem] relative rounded-lg">
+          <div className=" w-full md:w-[18rem] h-[20rem] relative rounded-lg">
             <Image
               fill
               className=" object-cover object-center rounded-lg"
@@ -55,12 +55,12 @@ const Reviews = () => {
             <Star fill="#4E35CE" color="#4E35CE" />
             <StarHalfIcon fill="#4E35CE" color="none" />
           </div>
-          <h4 className="text-black text-lg font-normal w-[18rem]">
+          <h4 className="text-black text-lg font-normal  w-full md:w-[18rem]">
             Best quality out there would recommend to everyone
           </h4>
         </div>
         <div className="h-full border border-black/10 rounded-lg p-2">
-          <div className="w-[18rem] h-[20rem] relative rounded-lg">
+          <div className=" w-full md:w-[18rem] h-[20rem] relative rounded-lg">
             <Image
               fill
               className=" object-cover object-center rounded-lg"
@@ -80,12 +80,12 @@ const Reviews = () => {
             <Star fill="#4E35CE" color="#4E35CE" />
             <StarHalfIcon fill="#4E35CE" color="none" />
           </div>
-          <h4 className="text-black text-lg font-normal w-[18rem]">
+          <h4 className="text-black text-lg font-normal  w-full md:w-[18rem]">
             Best quality out there would recommend to everyone
           </h4>
         </div>
         <div className="h-full border border-black/10 rounded-lg p-2">
-          <div className="w-[18rem] h-[20rem] relative rounded-lg">
+          <div className=" w-full md:w-[18rem] h-[20rem] relative rounded-lg">
             <Image
               fill
               className=" object-cover object-center rounded-lg"
@@ -105,7 +105,7 @@ const Reviews = () => {
             <Star fill="#4E35CE" color="#4E35CE" />
             <StarHalfIcon fill="#4E35CE" color="none" />
           </div>
-          <h4 className="text-black text-lg font-normal w-[18rem]">
+          <h4 className="text-black text-lg font-normal  w-full md:w-[18rem]">
             Best quality out there would recommend to everyone
           </h4>
         </div>

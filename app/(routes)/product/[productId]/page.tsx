@@ -40,13 +40,13 @@ const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
   return (
     <div className="bg-white">
       <Container>
-        <div className="h-40" />
-        <div className="px-0.5 sm:px-4 lg:px-80">
+        <div className=" h-32 md:h-40" />
+        <div className="px-4 lg:px-80">
           <div className="flex items-center w-full">
             <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 w-full">
               <Gallery images={product.images} />
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8 px-4 sm:px-0 lg:pt-8">
-                <div className="mt-14 md:mt-0 mb-14 md:mb-0 px-4 sm:mt-16 sm:px-0 lg:pt-0 lg:-mt-0">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8 md:px-4 lg:pt-8">
+                <div className="mt-14 md:mt-0 mb-0 md:mb-0 md:px-4 sm:mt-16 px-0 lg:pt-0 lg:-mt-0">
                   <Info data={product} />
                 </div>
                 {/* <div className="mt-10 md:mt-0">
@@ -121,6 +121,7 @@ const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
         <Reviews />
         <div className="h-10" />
         <WhyUs />
+        <div className="md:h-10" />
       </Container>
     </div>
   );
