@@ -37,7 +37,7 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
 
   return (
     <div onClick={handleClick} className="flex flex-col items-center">
-      <div className="h-[560px] w-full md:w-[435px] relative bg-[#F7F7F7] cursor-pointer flex items-center justify-center group-hover:scale-110 group-hover:duration-300 group-hover:ease-in-out overflow-hidden">
+      <div className=" h-[450px] md:h-[560px] w-full md:w-[435px] relative bg-[#F7F7F7] cursor-pointer flex items-center justify-center group-hover:scale-110 group-hover:duration-300 group-hover:ease-in-out overflow-hidden">
         <Image
           fill
           className=" object-contain hover:scale-110 duration-300 transition ease-in-out"
