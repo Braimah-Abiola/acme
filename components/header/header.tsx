@@ -1,15 +1,15 @@
 "use client";
 
+import { background, opacity } from "@/anim/anim";
+import { AnimatePresence, motion } from "framer-motion";
+import { SearchIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { background, opacity } from "@/anim/anim";
-import Nav from "./nav";
-import Image from "next/image";
-import NavbarActions from "../navbar-actions";
-import { SearchIcon } from "lucide-react";
 import FreeShipping from "../banner/free-shipping";
+import NavbarActions from "../navbar-actions";
 import NavLink from "../ui/nav-link";
+import Nav from "./nav";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -77,14 +77,13 @@ const Header = () => {
             <motion.div
               variants={opacity}
               animate={!isActive ? "open" : "closed"}
-              className="shopContainer items-center"
+              className="flex items-center"
             >
-              <p className="shop">Shop</p>
-              <div className="el">
+              <SearchIcon className="mr-2" />
+              <div>
                 <NavbarActions />
               </div>
-              <SearchIcon />
-              <div
+              {/* <div
                 onClick={() => {
                   setIsActive(!isActive);
                 }}
@@ -93,7 +92,7 @@ const Header = () => {
                 <div
                   className={`burger ${isActive ? "burgerActive" : ""}`}
                 ></div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>

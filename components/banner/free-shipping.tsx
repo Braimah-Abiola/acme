@@ -1,8 +1,6 @@
-import { X } from "lucide-react";
-
 const FreeShipping = () => {
   return (
-    <div className="bg-[#1C1C1C] w-full py-1 flex flex-col items-center justify-center">
+    <div className="bg-[#4E35CE] w-full py-1 flex flex-col items-center justify-center">
       <div className="w-full flex flex-row items-center justify-center px-5">
         <p className="text-white text-base md:text-base">
           Free shipping on all orders above €200, T&C apply

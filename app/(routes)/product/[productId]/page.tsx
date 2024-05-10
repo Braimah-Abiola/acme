@@ -4,6 +4,7 @@ import CustomerSatisfaction from "@/components/customer-satisfaction";
 import FAQ from "@/components/faq";
 import Gallery from "@/components/gallery";
 import Info from "@/components/info";
+import ProductList from "@/components/product-list";
 import Reviews from "@/components/reviews";
 import {
   Accordion,
@@ -25,8 +26,12 @@ interface ProductPageProps {
 const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
   const product = await getProduct(params.productId);
   const suggestedProducts = await getProducts({
-    categoryId: product?.category?.id,
+    isFeatured: true,
   });
+
+  const filteredSuggestedProducts = suggestedProducts.filter(
+    (item) => item.id !== params.productId
+  );
 
   if (!product) {
     return null;
@@ -41,7 +46,7 @@ const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
             <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 w-full">
               <Gallery images={product.images} />
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8 px-4 sm:px-0 lg:pt-8">
-                <div className="mt-14 md:mt-0 mb-14 md:mb-0 px-4 sm:mt-16 sm:px-0 lg:pt-0 lg:-mt-10">
+                <div className="mt-14 md:mt-0 mb-14 md:mb-0 px-4 sm:mt-16 sm:px-0 lg:pt-0 lg:-mt-0">
                   <Info data={product} />
                 </div>
                 {/* <div className="mt-10 md:mt-0">
@@ -100,8 +105,13 @@ const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
               </div>
             </div>
           </div>
-
-          {/* <ProductList title="Related Items" items={suggestedProducts} /> */}
+        </div>
+        <hr className="mt-20" />
+        <div className="px-4 sm:px-6 lg:px-8 py-10 mt-10">
+          <ProductList
+            title="Similar Products"
+            items={filteredSuggestedProducts}
+          />
         </div>
         <hr className="my-10" />
         <CustomerSatisfaction />
@@ -109,6 +119,7 @@ const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
         <FAQ />
         <hr className="my-10" />
         <Reviews />
+        <div className="h-10" />
         <WhyUs />
       </Container>
     </div>

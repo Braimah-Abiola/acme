@@ -30,7 +30,7 @@ const ContactPage = () => {
             <Button className="w-full">Send Message</Button>
           </div>
         </div>
-        <div className="h-20"/>
+        <div className="h-20 md:h-40" />
         <WhyUs />
       </Container>
     </div>

@@ -26,9 +26,8 @@ const CartPage = () => {
     <div className="bg-white">
       <Container>
         <div className="px-4 py-16 sm:px-6 lg:px-8">
-          <h1 className="text-5xl md:text-6xl font-black text-black uppercase mt-14">
-            Shopping
-            <br /> Cart
+          <h1 className="text-5xl md:text-6xl font-semibold text-black uppercase mt-14 md:mt-24">
+            Shopping Cart
           </h1>
           <div className="mt-12 lg:grid lg:grid-cols-12 lg:items-start gap-x-12">
             <div className="lg:col-span-7">

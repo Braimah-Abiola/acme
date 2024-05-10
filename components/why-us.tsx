@@ -5,7 +5,7 @@ const WhyUs = () => {
     <div className="w-full px-60 pb-20">
       <div className="flex items-center justify-between">
         <div className="w-full flex flex-col items-center">
-          <Truck className="text-[#E37347] h-10 w-10 mb-4" />
+          <Truck className="text-[#4E35CE] h-10 w-10 mb-4" />
           <h4 className="text-[#1C1C1C] uppercase text-lg font-medium">
             FREE UK SHIPPING
           </h4>
@@ -14,7 +14,7 @@ const WhyUs = () => {
           </p>
         </div>
         <div className="w-full flex flex-col items-center">
-          <CreditCard className="text-[#E37347] h-10 w-10 mb-4" />
+          <CreditCard className="text-[#4E35CE] h-10 w-10 mb-4" />
           <h4 className="text-[#1C1C1C] uppercase text-lg font-medium">
             FREE UK SHIPPING
           </h4>
@@ -23,7 +23,7 @@ const WhyUs = () => {
           </p>
         </div>
         <div className="w-full flex flex-col items-center">
-          <Headphones className="text-[#E37347] h-10 w-10 mb-4" />
+          <Headphones className="text-[#4E35CE] h-10 w-10 mb-4" />
           <h4 className="text-[#1C1C1C] uppercase text-lg font-medium">
             CONTACT US
           </h4>
