@@ -32,11 +32,11 @@ const Info: React.FC<InfoProps> = ({ data }) => {
         {data.name}
       </h1>
       <div className="flex items-center gap-1 py-4">
-        <Star fill="#4E35CE" color="#4E35CE" />
-        <Star fill="#4E35CE" color="#4E35CE" />
-        <Star fill="#4E35CE" color="#4E35CE" />
-        <Star fill="#4E35CE" color="#4E35CE" />
-        <StarHalfIcon fill="#4E35CE" color="none" />
+        <Star fill="#123296" color="#123296" />
+        <Star fill="#123296" color="#123296" />
+        <Star fill="#123296" color="#123296" />
+        <Star fill="#123296" color="#123296" />
+        <StarHalfIcon fill="#123296" color="none" />
         <p className="text-black/80 text-base font-normal">(12)</p>
       </div>
       <div className="mt-2 flex items-center gap-4">

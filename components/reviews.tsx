@@ -20,15 +20,15 @@ const Reviews = () => {
           </div>
           <div className="flex items-center gap-2 mt-2">
             <p className="text-lg font-medium">Logan F</p>
-            <BadgeCheck color="#4E35CE" />
+            <BadgeCheck color="#123296" />
           </div>
           <p className="text-black/60">07/09/2023</p>
           <div className="flex items-center py-2">
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <StarHalfIcon fill="#4E35CE" color="none" />
+            <Star fill="#123296" color="#123296" />
+            <Star fill="#123296" color="#123296" />
+            <Star fill="#123296" color="#123296" />
+            <Star fill="#123296" color="#123296" />
+            <StarHalfIcon fill="#123296" color="none" />
           </div>
           <h4 className="text-black text-lg font-normal  w-full md:w-[18rem]">
             Best quality out there would recommend to everyone
@@ -45,15 +45,15 @@ const Reviews = () => {
           </div>
           <div className="flex items-center gap-2 mt-2">
             <p className="text-lg font-medium">Nayel H</p>
-            <BadgeCheck color="#4E35CE" />
+            <BadgeCheck color="#123296" />
           </div>
           <p className="text-black/60">28/12/2023</p>
           <div className="flex items-center py-2">
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <StarHalfIcon fill="#4E35CE" color="none" />
+            <Star fill="#123296" color="#123296" />
+            <Star fill="#123296" color="#123296" />
+            <Star fill="#123296" color="#123296" />
+            <Star fill="#123296" color="#123296" />
+            <StarHalfIcon fill="#123296" color="none" />
           </div>
           <h4 className="text-black text-lg font-normal  w-full md:w-[18rem]">
             Best quality out there would recommend to everyone
@@ -70,15 +70,15 @@ const Reviews = () => {
           </div>
           <div className="flex items-center gap-2 mt-2">
             <p className="text-lg font-medium">Marley G</p>
-            <BadgeCheck color="#4E35CE" />
+            <BadgeCheck color="#123296" />
           </div>
           <p className="text-black/60">14/01/2024</p>
           <div className="flex items-center py-2">
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <StarHalfIcon fill="#4E35CE" color="none" />
+            <Star fill="#123296" color="#123296" />
+            <Star fill="#123296" color="#123296" />
+            <Star fill="#123296" color="#123296" />
+            <Star fill="#123296" color="#123296" />
+            <StarHalfIcon fill="#123296" color="none" />
           </div>
           <h4 className="text-black text-lg font-normal  w-full md:w-[18rem]">
             Best quality out there would recommend to everyone
@@ -95,15 +95,15 @@ const Reviews = () => {
           </div>
           <div className="flex items-center gap-2 mt-2">
             <p className="text-lg font-medium">Harley</p>
-            <BadgeCheck color="#4E35CE" />
+            <BadgeCheck color="#123296" />
           </div>
           <p className="text-black/60">05/02/2024</p>
           <div className="flex items-center py-2">
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <Star fill="#4E35CE" color="#4E35CE" />
-            <StarHalfIcon fill="#4E35CE" color="none" />
+            <Star fill="#123296" color="#123296" />
+            <Star fill="#123296" color="#123296" />
+            <Star fill="#123296" color="#123296" />
+            <Star fill="#123296" color="#123296" />
+            <StarHalfIcon fill="#123296" color="none" />
           </div>
           <h4 className="text-black text-lg font-normal  w-full md:w-[18rem]">
             Best quality out there would recommend to everyone

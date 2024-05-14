@@ -56,12 +56,12 @@ const Header = () => {
         <div className="bar mt-2 pb-3">
           <div>
             <Link href="/" className="md:ml-4 flex lg:ml-0 gap-x-2">
-              <div className="relative w-[120px] h-[50px]">
+              <div className="relative w-[135px] h-[48px]">
                 <Image
-                  className="hover:scale-110 transition duration-300 ease-in-out"
+                  className="hover:scale-110 transition duration-300 ease-in-out object-contain"
                   fill
                   src={`${
-                    isActive ? "/common/logo_white.svg" : "/common/logo.svg"
+                    isActive ? "/common/dripends.svg" : "/common/dripends.svg"
                   }`}
                   alt="Acme logo"
                 />

@@ -28,7 +28,7 @@ const NavbarActions = () => {
         className="flex items-center bg-white hover:bg-white text-black"
       >
         <ShoppingCart size={24} color="black" />
-        <span className="ml-2 text-sm font-medium h-6 w-6 bg-[#4E35CE] rounded-full flex items-center justify-center text-white">
+        <span className="ml-2 text-sm font-medium h-6 w-6 bg-[#123296] rounded-full flex items-center justify-center text-white">
           {cart.items.length}
         </span>
       </Button>
