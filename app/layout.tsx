@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 
 import Footer from "@/components/footer";
-import ModalProvider from "@/providers/modal-provider";
 import ToastProvider from "@/providers/toast-provider";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -24,10 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn("antialiased overflow-x-hidden w-full my-0", font.className)}
+        className={cn(
+          "antialiased overflow-x-hidden w-full my-0",
+          font.className
+        )}
       >
         <ToastProvider />
-        <ModalProvider />
         <Header />
         <div className="min-h-screen w-full">
           {children}
