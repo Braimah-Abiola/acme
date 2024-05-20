@@ -25,7 +25,7 @@ const HomePage = async () => {
       <CategoriesSection />
       <Container>
         <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8 mt-20 mb-28">
-          <ProductList title="Luxury Items" items={luxuryProducts} />
+          <ProductList title="Louis Vuitton" items={luxuryProducts} />
         </div>
       </Container>
       <FAQ />

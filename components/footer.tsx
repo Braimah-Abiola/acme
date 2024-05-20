@@ -17,12 +17,12 @@ const Footer = () => {
         <div className="w-full flex flex-col md:flex-row md:justify-between px-5 gap-10 md:gap-20">
           <div className="w-full flex flex-col items-start">
             <Link href="/" className="md:-mt-2">
-              <div className="relative w-[120px] h-[50px]">
+              <div className="relative w-[135px] h-[48px]">
                 <Image
-                  className="hover:scale-110 transition duration-300 ease-in-out"
+                  className="hover:scale-110 -ml-4 md:-ml-5 transition duration-300 ease-in-out"
                   fill
-                  src={`${"/common/logo_white.svg"}`}
-                  alt="Acme logo"
+                  src={`${"/common/dripends.svg"}`}
+                  alt="Dripends logo"
                 />
               </div>
             </Link>

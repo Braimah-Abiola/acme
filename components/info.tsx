@@ -11,15 +11,16 @@ import {
 
 import Currency from "@/components/ui/currency";
 import useCart from "@/hooks/use-cart";
-import { Product } from "@/types";
+import { Product, Size } from "@/types";
 import { Button } from "./ui/button";
 import CurrencyOriginal from "./ui/currency-original";
 
 interface InfoProps {
   data: Product;
+  sizes: Size[];
 }
 
-const Info: React.FC<InfoProps> = ({ data }) => {
+const Info: React.FC<InfoProps> = ({ data, sizes }) => {
   const cart = useCart();
 
   const onAddToCart = () => {
@@ -64,12 +65,19 @@ const Info: React.FC<InfoProps> = ({ data }) => {
       <hr className="my-6" />
       <div className="flex flex-col gap-y-6">
         <div className="flex items-center gap-x-4">
-          <h3 className="font-semibold text-black">Size:</h3>
-          <div className="border border-black/20 px-4 py-3 text-base">
-            {data?.size?.value}
-          </div>
+          <h3 className="font-semibold text-black">Size</h3>
         </div>
-        <div className="flex items-center gap-x-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-2 md:gap-2 w-full">
+          {sizes.map((size) => (
+            <div
+              key={size.id}
+              className="border border-black/20 px-4 py-3 text-base flex items-center justify-center"
+            >
+              {size.name}
+            </div>
+          ))}
+        </div>
+        <div className="flex items-center gap-x-2 mt-4">
           <h3 className="font-semibold text-black">Color:</h3>
           <div
             className={`h-6 w-6 rounded-full ml-2`}
@@ -83,9 +91,9 @@ const Info: React.FC<InfoProps> = ({ data }) => {
       <div className="mt-10 flex items-center gap-x-3">
         <Button
           onClick={onAddToCart}
-          className="flex items-center gap-x-2 px-8 w-full md:w-fit"
+          className="flex items-center gap-x-2 md:gap-x-4 px-8 w-full md:w-full md:py-8 text-xl"
         >
-          <ShoppingCart size={20} />
+          <ShoppingCart size={24} />
           Add To Cart
         </Button>
       </div>
