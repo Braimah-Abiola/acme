@@ -80,7 +80,7 @@ const Info: React.FC<InfoProps> = ({ data, sizes }) => {
         <div className="flex items-center gap-x-2 mt-4">
           <h3 className="font-semibold text-black">Color:</h3>
           <div
-            className={`h-6 w-6 rounded-full ml-2`}
+            className={`h-6 w-6 rounded-full ml-2 border border-black/10`}
             style={{ backgroundColor: data?.color?.value }}
           />
           <h3 className="font-normal text-black text-base">
@@ -91,7 +91,7 @@ const Info: React.FC<InfoProps> = ({ data, sizes }) => {
       <div className="mt-10 flex items-center gap-x-3">
         <Button
           onClick={onAddToCart}
-          className="flex items-center gap-x-2 md:gap-x-4 px-8 w-full md:w-full md:py-8 text-xl"
+          className="flex items-center gap-x-2 md:gap-x-4 px-8 w-full md:w-full h-14"
         >
           <ShoppingCart size={24} />
           Add To Cart

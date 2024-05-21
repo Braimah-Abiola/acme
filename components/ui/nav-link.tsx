@@ -43,19 +43,33 @@ const NavLink = () => {
             <MenubarSub>
               <MenubarSubTrigger>Shoes</MenubarSubTrigger>
               <MenubarSubContent>
-                <MenubarItem>Jordan 1</MenubarItem>
-                <MenubarItem>Jordan 4</MenubarItem>
-                <MenubarItem>Air Max</MenubarItem>
-                <MenubarItem>Prada</MenubarItem>
-                <MenubarItem>Alexander McQueen</MenubarItem>
-                <MenubarItem>Dior</MenubarItem>
+                <Link href="/category/feac17d6-4e0b-4f15-aa3b-051f105b5f5f">
+                  <MenubarItem>Jordan 1</MenubarItem>
+                </Link>
+                <Link href="/category/1f7483fb-53f6-41af-b558-07ed5276b3d5">
+                  <MenubarItem>Jordan 4</MenubarItem>
+                </Link>
+                <Link href="/category/fe9a721a-bed1-47c8-8d85-5a487f04aa0e">
+                  <MenubarItem>Air Max</MenubarItem>
+                </Link>
+                <Link href="/category/a3c3bb31-82b7-4fcb-98ec-580aff581083">
+                  <MenubarItem>Prada</MenubarItem>
+                </Link>
+                <Link href="/category/c0893609-3968-4f9a-8e4b-0f0a94ee8ddb">
+                  <MenubarItem>Alexander McQueen</MenubarItem>
+                </Link>
+                <Link href="/category/d276a0c2-9f90-4b0a-a109-4cd33dc61e82">
+                  <MenubarItem>Dior</MenubarItem>
+                </Link>
                 <Link href="/category/d797fc92-08d9-446b-abcd-8354bb1c9cde">
                   <MenubarItem>Asics</MenubarItem>
                 </Link>
                 <Link href="/category/fe1cb651-0aa8-42d1-b79c-1da1af2a0e7d">
                   <MenubarItem>LV</MenubarItem>
                 </Link>
-                <MenubarItem>Slides</MenubarItem>
+                <Link href="/category/a8f1952b-ebde-40bb-a76e-80a2d6cb228f">
+                  <MenubarItem>Slides</MenubarItem>
+                </Link>
               </MenubarSubContent>
             </MenubarSub>
             <MenubarItem>Windrunners</MenubarItem>

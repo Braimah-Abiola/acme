@@ -30,7 +30,7 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
           alt="Product image"
         />
       </div>
-      <h4 className="uppercase font-semibold text-lg md:text-xl mt-4 md:mt-5">
+      <h4 className="uppercase font-semibold text-center text-lg md:text-xl mt-4 md:mt-5">
         {data.name}
       </h4>
       <div className="mt-2 flex items-center gap-4">
