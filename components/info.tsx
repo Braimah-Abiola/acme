@@ -14,6 +14,10 @@ import useCart from "@/hooks/use-cart";
 import { Product, Size } from "@/types";
 import { Button } from "./ui/button";
 import CurrencyOriginal from "./ui/currency-original";
+import qs from "query-string";
+
+import { useRouter, useSearchParams } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 interface InfoProps {
   data: Product;
@@ -26,6 +30,28 @@ const Info: React.FC<InfoProps> = ({ data, sizes }) => {
   const onAddToCart = () => {
     cart.addItem(data);
   };
+
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  const selectedValue = searchParams.get("sizeId");
+
+  function handleSelectItem(itemId: string) {
+    const currentQuery = qs.parse(searchParams.toString());
+
+    const newQuery = { ...currentQuery, ["sizeId"]: itemId };
+
+    if (currentQuery["sizeId"] === itemId) {
+      newQuery["sizeId"] = null;
+    }
+
+    const url = qs.stringifyUrl(
+      { url: window.location.href, query: newQuery },
+      { skipNull: true }
+    );
+
+    router.push(url);
+  }
 
   return (
     <div>
@@ -68,14 +94,21 @@ const Info: React.FC<InfoProps> = ({ data, sizes }) => {
           <h3 className="font-semibold text-black">Size</h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-2 md:gap-2 w-full">
-          {sizes.map((size) => (
-            <div
-              key={size.id}
-              className="border border-black/20 px-4 py-3 text-base flex items-center justify-center"
-            >
-              {size.name}
-            </div>
-          ))}
+          {sizes.map((size) => {
+            const isSelected = size.id === selectedValue;
+            return (
+              <div
+                onClick={() => handleSelectItem(size.id)}
+                key={size.id}
+                className={cn(
+                  "border cursor-pointer select-none border-black/20 px-4 py-3 text-base text-black/80 flex items-center justify-center",
+                  isSelected ? "border-2 font-medium border-[#123296] text-black" : ""
+                )}
+              >
+                {size.name}
+              </div>
+            );
+          })}
         </div>
         <div className="flex items-center gap-x-2 mt-4">
           <h3 className="font-semibold text-black">Color:</h3>

@@ -76,7 +76,9 @@ const NavLink = () => {
             <MenubarItem>Bags</MenubarItem>
             <MenubarItem>Hats & Caps</MenubarItem>
             <MenubarItem>Sunglasses</MenubarItem>
-            <MenubarItem>Socks</MenubarItem>
+            <Link href="/category/eaa55794-5fd7-4ccb-92f6-1bf68c01afc7">
+              <MenubarItem>Socks</MenubarItem>
+            </Link>
             <MenubarSeparator />
             <MenubarSub>
               <MenubarSubTrigger>Women</MenubarSubTrigger>
