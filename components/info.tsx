@@ -24,6 +24,11 @@ interface InfoProps {
   sizes: Size[];
 }
 
+interface Query {
+  sizeId?: string | null;
+  [key: string]: any;
+}
+
 const Info: React.FC<InfoProps> = ({ data, sizes }) => {
   const cart = useCart();
 
@@ -37,12 +42,12 @@ const Info: React.FC<InfoProps> = ({ data, sizes }) => {
   const selectedValue = searchParams.get("sizeId");
 
   function handleSelectItem(itemId: string) {
-    const currentQuery = qs.parse(searchParams.toString());
+    const currentQuery = qs.parse(searchParams.toString()) as Query;
 
-    const newQuery = { ...currentQuery, ["sizeId"]: itemId };
+    const newQuery: Query = { ...currentQuery, sizeId: itemId };
 
-    if (currentQuery["sizeId"] === itemId) {
-      newQuery["sizeId"] = null;
+    if (currentQuery.sizeId === itemId) {
+      delete newQuery.sizeId;
     }
 
     const url = qs.stringifyUrl(
@@ -102,7 +107,9 @@ const Info: React.FC<InfoProps> = ({ data, sizes }) => {
                 key={size.id}
                 className={cn(
                   "border cursor-pointer select-none border-black/20 px-4 py-3 text-base text-black/80 flex items-center justify-center",
-                  isSelected ? "border-2 font-medium border-[#123296] text-black" : ""
+                  isSelected
+                    ? "border-2 font-medium border-[#123296] text-black"
+                    : ""
                 )}
               >
                 {size.name}
