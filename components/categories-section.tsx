@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const CategoriesSection = () => {
   return (
@@ -22,9 +23,11 @@ const CategoriesSection = () => {
                 <h4 className=" text-3xl text-white uppercase mb-4 font-medium">
                   Nike
                 </h4>
-                <Button variant="secondary" className=" px-12">
-                  Shop Now
-                </Button>
+                <Link href="/category/fe1cb651-0aa8-42d1-b79c-1da1af2a0e7d">
+                  <Button variant="secondary" className=" px-12">
+                    Shop Now
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="w-full bg-black h-[20rem] md:h-full group">
@@ -42,9 +45,11 @@ const CategoriesSection = () => {
                 <h4 className=" text-3xl text-white uppercase mb-4 font-medium">
                   LV
                 </h4>
-                <Button variant="secondary" className=" px-12">
-                  Shop Now
-                </Button>
+                <Link href="/category/fe1cb651-0aa8-42d1-b79c-1da1af2a0e7d">
+                  <Button variant="secondary" className=" px-12">
+                    Shop Now
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="w-full bg-black h-[20rem] md:h-full group">
@@ -62,9 +67,11 @@ const CategoriesSection = () => {
                 <h4 className=" text-3xl text-white uppercase mb-4 font-medium">
                   ESNTLS
                 </h4>
-                <Button variant="secondary" className=" px-12">
-                  Shop Now
-                </Button>
+                <Link href="/category/fe1cb651-0aa8-42d1-b79c-1da1af2a0e7d">
+                  <Button variant="secondary" className=" px-12">
+                    Shop Now
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="w-full bg-black h-[20rem] md:h-full group">
@@ -81,9 +88,11 @@ const CategoriesSection = () => {
                 <h4 className=" text-3xl text-white uppercase mb-4 font-medium">
                   RALPH LAUREN
                 </h4>
-                <Button variant="secondary" className=" px-12">
-                  Shop Now
-                </Button>
+                <Link href="/category/fe1cb651-0aa8-42d1-b79c-1da1af2a0e7d">
+                  <Button variant="secondary" className=" px-12">
+                    Shop Now
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

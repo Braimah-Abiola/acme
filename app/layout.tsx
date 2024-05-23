@@ -11,8 +11,8 @@ import "./globals.css";
 const font = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Acme",
-  description: "Acme - The place for all your custom drip",
+  title: "Dripends",
+  description: "Dripends - The place for all your custom drip",
 };
 
 export default function RootLayout({

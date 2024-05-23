@@ -7,10 +7,6 @@ import Container from "./ui/container";
 import { Input } from "./ui/input";
 
 const Footer = () => {
-  // const handleScrollToTop = () => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // };
-
   return (
     <footer className="bg-[#1C1C1C] pt-10 md:pt-20 pb-10 border-t mt-20 md:mt-0">
       <Container>
@@ -72,9 +68,7 @@ const Footer = () => {
             <Image width={24} height={24} src="/common/us.png" alt="Currency" />
             <p className="text-white/70 text-base">United States - Dollar</p>
           </div>
-          <p className="text-white/70 text-base">
-            ©2024 - Acme, by AAA Software
-          </p>
+          <p className="text-white/70 text-base">©2024 - Dripends</p>
           <div className="flex items-center gap-4">
             <svg
               version="1.1"
