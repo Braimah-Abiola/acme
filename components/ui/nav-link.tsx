@@ -52,6 +52,9 @@ const NavLink = () => {
                 <Link href="/category/fe9a721a-bed1-47c8-8d85-5a487f04aa0e">
                   <MenubarItem>Air Max</MenubarItem>
                 </Link>
+                <Link href="/category/b5527759-5af2-4736-81e3-89b5a479643a">
+                  <MenubarItem>Balanciaga</MenubarItem>
+                </Link>
                 <Link href="/category/a3c3bb31-82b7-4fcb-98ec-580aff581083">
                   <MenubarItem>Prada</MenubarItem>
                 </Link>
