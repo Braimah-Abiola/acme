@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 
 import Footer from "@/components/footer";
 import ToastProvider from "@/providers/toast-provider";
-import { Analytics } from "@vercel/analytics/react";
 
 import Header from "@/components/header/header";
 import { cn } from "@/lib/utils";
@@ -30,10 +29,7 @@ export default function RootLayout({
       >
         <ToastProvider />
         <Header />
-        <div className="min-h-screen w-full">
-          {children}
-          <Analytics />
-        </div>
+        <div className="min-h-screen w-full">{children}</div>
         <Footer />
       </body>
     </html>
