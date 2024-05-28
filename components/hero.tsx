@@ -35,7 +35,9 @@ const LandingHero = () => {
           Elevate your look, embrace your style. Unleash the essence of fashion
           with confidence and comfort in every thread.
         </p>
-        <Button className="w-fit px-10 mt-5 z-50">Shop Now</Button>
+        <Link href="/shop">
+          <Button className="w-fit px-10 mt-5 z-50">Shop Now</Button>
+        </Link>
       </div>
     </div>
   );

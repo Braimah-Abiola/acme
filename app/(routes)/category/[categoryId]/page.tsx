@@ -7,9 +7,6 @@ import getColors from "@/actions/get-colors";
 import getProducts from "@/actions/get-products";
 import getSizes from "@/actions/get-sizes";
 
-import Filter from "./components/filter";
-import MobileFilters from "./components/mobile-filters";
-
 export const revalidate = 0;
 
 interface CategoryPageProps {
