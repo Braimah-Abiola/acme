@@ -99,7 +99,9 @@ const NavLink = () => {
         </MenubarMenu>
       </Menubar>
 
-      <h3 className=" hover:text-black cursor-pointer">PREMIUM FOOTWEAR</h3>
+      <Link href="/#premium-footwear">
+        <h3 className=" hover:text-black cursor-pointer">PREMIUM FOOTWEAR</h3>
+      </Link>
       <h3 className="hover:text-black cursor-pointer">
         <Link href="/contact-us">CONTACT US</Link>
       </h3>

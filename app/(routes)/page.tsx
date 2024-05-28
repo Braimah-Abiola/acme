@@ -18,7 +18,10 @@ const HomePage = async () => {
       <LandingHero />
       {/* <LandingGallery /> */}
       <Container>
-        <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8 mt-20 mb-28">
+        <div
+          id="premium-footwear"
+          className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8 mt-20 mb-28"
+        >
           <ProductList title="Most Popular" items={products} />
         </div>
       </Container>

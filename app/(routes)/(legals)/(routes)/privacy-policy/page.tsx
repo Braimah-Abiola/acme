@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import Container from "@/components/ui/container";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Acme",
+  title: "Privacy Policy - Dripends",
   description: "...",
 };
 
@@ -55,7 +55,7 @@ const PrivacyPolicy = () => {
               This Privacy Policy describes how our personal information is
               collected, used, and shared when you visit or make a purchase from
               collected, used, and shared when you visit or make a purchase from
-              shopAcme.com (the “https://shopAcme.com”).
+              Dripends.com (the “https://dripends.com”).
             </p>
 
             <TermsOfServiceAccordion />

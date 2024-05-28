@@ -9,7 +9,7 @@ const PrivacyPolicyAccordion = () => {
   return (
     <Accordion type="single" collapsible className="w-full mt-10 bg-white">
       <AccordionItem value="item-1">
-        <AccordionTrigger>What is Acme?</AccordionTrigger>
+        <AccordionTrigger>What is Dripends?</AccordionTrigger>
         <AccordionContent>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
           aut itaque esse, quo quae, sunt impedit asperiores provident debitis,
@@ -18,7 +18,7 @@ const PrivacyPolicyAccordion = () => {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>How does Acme work?</AccordionTrigger>
+        <AccordionTrigger>How does Dripends work?</AccordionTrigger>
         <AccordionContent>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
           aut itaque esse, quo quae, sunt impedit asperiores provident debitis,
@@ -27,7 +27,7 @@ const PrivacyPolicyAccordion = () => {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>Are there any fees to use Acme?</AccordionTrigger>
+        <AccordionTrigger>Are there any fees to use Dripends?</AccordionTrigger>
         <AccordionContent>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
           aut itaque esse, quo quae, sunt impedit asperiores provident debitis,
@@ -73,10 +73,10 @@ const PrivacyPolicyAccordion = () => {
       </AccordionItem>
       <AccordionItem value="item-7">
         <AccordionTrigger>
-          Can I access Acme on mobile devices?
+          Can I access Dripends on mobile devices?
         </AccordionTrigger>
         <AccordionContent>
-          Yes, Acme is designed to be mobile-responsive. You can access and use
+          Yes, Dripends is designed to be mobile-responsive. You can access and use
           it on your smartphone or tablet for convenience on the go.
         </AccordionContent>
       </AccordionItem>

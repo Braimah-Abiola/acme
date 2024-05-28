@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className=" scroll-smooth">
       <body
         className={cn(
           "antialiased overflow-x-hidden w-full my-0",

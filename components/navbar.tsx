@@ -21,7 +21,7 @@ const Navbar = async () => {
                 className="hover:scale-110 transition duration-300 ease-in-out"
                 fill
                 src="/common/logo.svg"
-                alt="Acme logo"
+                alt="Dripends logo"
               />
             </div>
           </Link>

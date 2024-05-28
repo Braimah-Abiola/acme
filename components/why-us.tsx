@@ -28,7 +28,7 @@ const WhyUs = () => {
             CONTACT US
           </h4>
           <p className=" font-normal text-base text-black/70 w-1/2 text-center">
-            Customer support is available at acme@gmail.com
+            Customer support is available at dripends@gmail.com
           </p>
         </div>
       </div>

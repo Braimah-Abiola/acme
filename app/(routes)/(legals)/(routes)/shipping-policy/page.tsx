@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import Container from "@/components/ui/container";
 
 export const metadata: Metadata = {
-  title: "Shipping Policy - Acme",
+  title: "Shipping Policy - Dripends",
   description: "...",
 };
 
@@ -46,7 +46,7 @@ const ShippingPolicy = () => {
             </h2>
 
             <p className="text-base mt-2 md:mt-12">
-              Thank you for visiting Acme, we hope you have a pleasant shopping
+              Thank you for visiting Dripends, we hope you have a pleasant shopping
               experience. Please see below for more information on our shipping
               policy.
             </p>

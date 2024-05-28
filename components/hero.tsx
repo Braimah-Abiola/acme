@@ -20,11 +20,11 @@ const LandingHero = () => {
         <div className="w-full flex flex-col items-center">
           <p className="text-white font-normal text-lg mb-1.5 md:mb-2 hidden md:block">
             Use CODE:{" "}
-            <span className="text-[#123296] font-semibold">ACME10</span> FOR €10
+            <span className="text-[#123296] font-semibold">DRIP10</span> FOR $10
             OFF YOUR ORDER
           </p>
           <p className="text-white font-normal text-lg mb-1.5 md:mb-2  md:hidden text-center">
-            <span className="text-[#123296] font-semibold">ACME10</span> FOR €10
+            <span className="text-[#123296] font-semibold">DRIP10</span> FOR $10
             OFF YOUR ORDER
           </p>
         </div>

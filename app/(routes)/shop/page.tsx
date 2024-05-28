@@ -83,7 +83,7 @@ const ShopPage = async () => {
               </div>
             </div>
           </div>
-          <h3 className="uppercase text-3xl md:text-5xl font-bold w-full text-center mb-5 md:mb-10 mt-10 md:mt-28">
+          <h3 className="uppercase text-3xl md:text-5xl font-bold w-full text-center mb-5 md:mb-10 mt-10 md:mt-28"> 
             <span className=" opacity-60">Categories</span> &gt; Jordan 4
           </h3>
           <div className="w-full">

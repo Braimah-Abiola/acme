@@ -7,22 +7,28 @@ import Container from "./ui/container";
 import { Input } from "./ui/input";
 
 const Footer = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <footer className="bg-[#1C1C1C] pt-10 md:pt-20 pb-10 border-t mt-20 md:mt-0">
       <Container>
         <div className="w-full flex flex-col md:flex-row md:justify-between px-5 gap-10 md:gap-20">
           <div className="w-full flex flex-col items-start">
-            <Link href="/" className="md:-mt-2">
-              <div className="relative w-[135px] h-[48px]">
-                <Image
-                  className="hover:scale-110 -ml-4 md:-ml-5 transition duration-300 ease-in-out"
-                  fill
-                  src={`${"/common/dripends.svg"}`}
-                  alt="Dripends logo"
-                />
-              </div>
-            </Link>
-            <p className="text-white/70 text-base md:w-[70%]">
+            <div
+              className="relative w-[135px] h-[48px] cursor-pointer"
+              onClick={() => {
+                handleScrollToTop();
+              }}
+            >
+              <Image
+                className="hover:scale-110 -ml-4 md:-ml-5 transition duration-300 ease-in-out"
+                fill
+                src={`${"/common/dripends.svg"}`}
+                alt="Dripends logo"
+              />
+            </div>
+            <p className="text-white/70 text-base md:w-[70%] mt-2">
               Elevate your look, embrace your style. Unleash the essence of
               fashion with confidence and comfort in every thread.
             </p>
@@ -30,11 +36,17 @@ const Footer = () => {
           <div className="w-1/2 font-medium">
             <h3 className="text-lg text-white mb-4">NAVIGATION</h3>
             <div className="flex flex-col items-start gap-2">
-              <p className="text-white/70 text-base">Home</p>
-              <p className="text-white/70 text-base">Fast Delivery</p>
-              <p className="text-white/70 text-base">Brands</p>
-              <p className="text-white/70 text-base">Premium Footwear</p>
-              <p className="text-white/70 text-base">Contact Us</p>
+              <Link href="/">
+                <p className="text-white/70 text-base hover:text-white">Home</p>
+              </Link>
+              <Link href="/shop">
+                <p className="text-white/70 text-base hover:text-white">Shop</p>
+              </Link>
+              <Link href="/contact-us">
+                <p className="text-white/70 text-base hover:text-white">
+                  Contact Us
+                </p>
+              </Link>
             </div>
           </div>
           <div className="w-1/2 font-medium">

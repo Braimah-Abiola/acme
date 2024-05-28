@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import Container from "@/components/ui/container";
 
 export const metadata: Metadata = {
-  title: "Refund Policy - Acme",
+  title: "Refund Policy - Dripends",
   description: "...",
 };
 

@@ -60,7 +60,7 @@ const Preloader = () => {
                 className=" hover:scale-110 transition duration-300 ease-in-out -rotate-6"
                 fill
                 src="/common/logo_white.svg"
-                alt="Acme logo"
+                alt="Dripends logo"
               />
             </div>
             <div className="w-full flex flex-row justify-between font-black text-white text-lg z-[2147483000]">
